@@ -1,0 +1,36 @@
+Project Renamer
+===============
+
+This program renames a project directory and all occurrences of the project name in the files
+and directories. It also renames the files and directories to match the new project name.
+
+Example
+-------
+
+Given a project with this structure:
+
+```
+test-project
+├── test-dir-1
+│   ├── test-dir-test-project
+│   │   └── test-file-test-project.txt "test_project"
+│   └── test-file-2.txt "Test Project"
+└── test-file-1.txt "test-project"
+```
+
+Run the Project Renamer with this input:
+
+```
+./project-renamer --input "/path/to/test-project/" --name "copied-project"
+```
+
+You will receive a new directory adjacent to the original project with this structure:
+
+```
+copied-project
+├── test-dir-1
+│   ├── test-dir-copied-project
+│   │   └── test-file-copied-project.txt
+│   └── copied-file-2.txt
+└── copied-file-1.txt
+```
