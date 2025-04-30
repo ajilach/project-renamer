@@ -30,7 +30,7 @@ You will receive a new directory adjacent to the original project with this stru
 copied-project
 ├── test-dir-1
 │   ├── test-dir-copied-project
-│   │   └── test-file-copied-project.txt
-│   └── copied-file-2.txt
-└── copied-file-1.txt
+│   │   └── test-file-copied-project.txt "copied_project"
+│   └── copied-file-2.txt "Copied Project"
+└── copied-file-1.txt "copied-project"
 ```
