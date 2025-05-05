@@ -18,7 +18,13 @@ test-project
 └── test-file-1.txt "test-project"
 ```
 
-Run the Project Renamer with this input:
+Download the application binary from the GitHub Releases. You may need to make the binary executable first.
+
+```
+sudo chmod 777 project-renamer
+```
+
+Then Run the Project Renamer with this input:
 
 ```
 ./project-renamer --input "/path/to/test-project/" --name "copied-project"
