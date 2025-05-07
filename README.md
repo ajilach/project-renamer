@@ -30,13 +30,13 @@ Then Run the Project Renamer with this input:
 ./project-renamer --input "/path/to/test-project/" --name "copied-project"
 ```
 
-You will receive a new directory adjacent to the original project with this structure:
+You will receive a new directory adjacent to the original project with this structure. All the occurences of "Test Project", no matter the case, will be renamed to "Copied Project":
 
 ```
 copied-project
 ├── test-dir-1
 │   ├── test-dir-copied-project
 │   │   └── test-file-copied-project.txt "copied_project"
-│   └── copied-file-2.txt "Copied Project"
-└── copied-file-1.txt "copied-project"
+│   └── test-file-2.txt "Copied Project"
+└── test-file-1.txt "copied-project"
 ```
